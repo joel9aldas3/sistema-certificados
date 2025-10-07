@@ -165,7 +165,7 @@ class EmailService {
             <div class="header">
                 <div class="certificate-icon">🎓</div>
                 <h1>¡Felicidades!</h1>
-                <p>Instituto Vida Nueva</p>
+                <p>Estimado Docente !!</p>
             </div>
             
             <div class="content">
@@ -185,8 +185,8 @@ class EmailService {
                 <p><strong>¿Qué hacer con tu certificado?</strong></p>
                 <ul>
                     <li>📥 Descárgalo y guárdalo en un lugar seguro</li>
-                    <li>🖨️ Imprímelo para tu portafolio profesional</li>
-                    <li>💼 Agrégalo a tu CV y perfil de LinkedIn</li>
+                    <li>🖨️ O si quieres Imprímelo y guardalo</li>
+                    
                 </ul>
                 
                 <p>¡Felicidades por tu logro! Continúa aprendiendo y creciendo con nosotros.</p>
@@ -194,7 +194,7 @@ class EmailService {
                 <div class="footer">
                     <p><strong>Instituto Vida Nueva</strong></p>
                     <p>Este es un correo automático, por favor no responder.</p>
-                    <p>Para consultas, contacta a: info@istvidanueva.edu.ec</p>
+                    <p>Para consultas, contacta a: biblioteca.campusnorte@istvidanueva.edu.ec</p>
                     <p>&copy; ' . date('Y') . ' Instituto Vida Nueva. Todos los derechos reservados.</p>
                 </div>
             </div>

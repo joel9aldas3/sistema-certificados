@@ -80,12 +80,12 @@ class Certificate {
         $configs = [
             'template' => [ // Template por defecto
                 'name_x' => 30,
-                'name_y' => 87,
+                'name_y' => 90,
                 'name_size' => 25,
                 'course_y' => 116,
                 'course_size' => 20,
-                'date_y' => 170,
-                'date_size' => 14
+                'date_y' => 200,
+                'date_size' => 10
             ],
             'template_programacion' => [
                 'name_x' => 50,
@@ -149,21 +149,21 @@ class Certificate {
             
             // Configurar fuente para el nombre
             $pdf->SetFont('helvetica', 'B', $config['name_size']);
-            $pdf->SetTextColor(0, 0, 0);
+            $pdf->SetTextColor(24, 45, 81);
             
             // Posición del nombre - usando todo el ancho disponible
             $pdf->SetXY($config['name_x'], $config['name_y']);
             $pdf->Cell(237, 15, $participantData['name'], 0, 1, 'C');
             
-            // Curso - centrado y con más espacio
+            /* // Curso - centrado y con más espacio
             $pdf->SetFont('helvetica', 'B', $config['course_size']);
             $pdf->SetXY(30, $config['course_y']);
-            $pdf->Cell(237, 15, strtoupper($participantData['course']), 0, 1, 'C');
+            $pdf->Cell(237, 15, strtoupper($participantData['course']), 0, 1, 'C'); */
             
-            /*/ Fecha
+            // Fecha
             $pdf->SetFont('helvetica', '', $config['date_size']);
-            $pdf->SetXY(50, $config['date_y']);
-            $pdf->Cell(197, 10, 'Fecha de finalización: ' . date('d/m/Y', strtotime($participantData['date_completed'])), 0, 1, 'C'); */
+            $pdf->SetXY(165, $config['date_y']);
+            $pdf->Cell(197, 10, 'Fecha de finalización: ' . date('d/m/Y', strtotime($participantData['date_completed'])), 0, 1, 'C'); 
             
             // Generar nombre del archivo único
             $filename = 'certificado_' . str_replace(' ', '_', strtolower($participantData['name'])) . '_' . uniqid() . '.pdf';

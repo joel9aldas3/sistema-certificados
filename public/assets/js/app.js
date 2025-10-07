@@ -293,7 +293,7 @@ function sendSelectedEmails() {
     }
     
     // Mostrar progreso
-    const progressHtml = `
+   const progressHtml = `
         <div id="emailProgress" class="alert alert-info mt-3">
             <strong><i class="fas fa-spinner fa-spin"></i> Enviando emails...</strong>
             <div class="progress mt-2">
@@ -301,7 +301,7 @@ function sendSelectedEmails() {
                      role="progressbar" style="width: 0%">0%</div>
             </div>
             <small class="mt-2 d-block">Esto puede tomar unos minutos. Por favor espera...</small>
-        </div>`;
+        </div>`; 
     
     $('.card-header').after(progressHtml);
     $('#sendSelectedEmailsBtn').prop('disabled', true);
@@ -407,7 +407,7 @@ function generateBatchCertificates(participantIds) {
                 <div class="progress-bar progress-bar-striped progress-bar-animated" 
                      role="progressbar" style="width: 0%">0%</div>
             </div>
-        </div>`;
+        </div>`; 
     
     $('#generateSelectedBtn').before(progressHtml);
     $('#generateSelectedBtn').prop('disabled', true);
