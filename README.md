@@ -68,3 +68,4 @@ sistema-certificados/
 ├── generated/ (PDFs generados)
 └── ejemplo.csv
 ```
+# sistema-certificados
